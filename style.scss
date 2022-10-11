@@ -1,15 +1,13 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-body {
+body{
   background-color: #ECE8EF;
 }
-
-header {
+header{
   display: flex;
   width: 100%;
   height: 10vh;
@@ -19,91 +17,92 @@ header {
   align-items: center;
   position: fixed;
   background-color: #E7F0FF;
-}
-header div {
-  display: flex;
+  div {
+    display: flex;
   gap: 20px;
-  align-items: center;
-  width: 250px;
-}
-header div img {
-  border-radius: 500px;
-  width: 50px;
-  height: 50px;
+  align-items:center;
+  width:250px;
+    img {
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
-a {
+}
+
+a{
   color: black;
   text-decoration: none;
+  
 }
 
-.underline:hover {
-  transition: 2s;
+.underline:hover{
+  
+  transition:2s ;
   border-bottom: 2px solid #0A2342;
+
 }
 
-nav {
+
+nav{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   font-size: 20px;
   font-style: italic;
-  height: 50%;
+  height:50%;
 }
-
-.link {
+.link{
   width: 100px;
-}
-.link a {
-  margin: auto;
-}
-
-a {
+  a{
+    margin: auto;
+  }
+} 
+a { 
   margin-left: auto;
-}
-a > .git {
+  >
+.git{
+
   width: 50px;
   height: 50px;
   background-color: #fff;
   border-radius: 500px;
   margin-left: auto;
-}
+}}
 
-.profil {
+
+.profil{
   display: block;
   justify-content: center;
-  margin: auto;
+  margin:auto;
   margin-top: 2%;
   width: 250px;
   height: 250px;
   border-radius: 1000px;
 }
-
-main {
+main{
   height: 300vh;
-  background: linear-gradient(180deg, #ECE8EF 10%, #727072 50%, #0A2342 90%);
-}
+  background: linear-gradient(180deg ,#ECE8EF 10%, #727072 50%, #0A2342 90%);
 
-.about {
+}
+.about{
   width: 100%;
   height: 100vh;
-}
 
-.projet {
-  width: 100%;
-  height: 100vh;
-  color: #fff;
 }
-
-.skills {
+.projet{
   width: 100%;
   height: 100vh;
   color: #fff;
 }
 
-.protection {
+.skills{
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.protection{
   padding-top: 10vh;
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
