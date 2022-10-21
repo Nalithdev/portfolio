@@ -4,9 +4,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:15px;
 }
 body{
-  background-color: #ECE8EF;
+  background: linear-gradient(180deg ,#ECE8EF 10%, #727072 50%, #0A2342 90%);
 }
 header{
   display: flex;
@@ -16,20 +17,89 @@ header{
   padding: 1%;
   align-items: center;
   position: fixed;
-  background:linear-gradient(180deg , #E7F0FF 50%, transparent); ;
+  backdrop-filter: blur(4px);
+
   div {
     display: flex;
   gap: 20px;
   align-items:center;
   width:250px;
+  h2{
+  font-size: 1.5rem;}
     img {
     border-radius: 500px;
     width: 50px;
     height: 50px;
   }
 }
-
+.sidenav {
+  display: initial;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(117, 117, 117);
+    display: block;
+    transition: 0.3s;
+    a:hover {
+      color: white;
+      }
+    
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
 }
+.Menu{
+  display: none;
+  font-size:40px;
+  cursor:pointer;
+  height: 110%;
+  margin-right: 1.5%;
+  margin-top: 1%;
+}
+
+
+
+.menu-overlay {
+  display: initial;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:transparent;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 1;
+
+  margin-top: 30vh;
+}
+
+.side-active{
+
+  height:30vh;
+  
+  }
+  .menu-overlay-active {
+  height:70vh;
+} 
+}
+
 
 a{
   color: black;
@@ -51,24 +121,22 @@ nav{
   justify-content:space-evenly;
   font-size: 20px;
   height:50%;
-}
+
 .link{
   width: 100px;
   a{
     margin: auto;
+    font-size: 1.3rem;
   }
-} 
-a { 
-  margin-left: auto;
-  >
+} }
+
 .git{
 
-  width: 50px;
-  height: 50px;
+  width: 250px;
+
   background-color: #fff;
-  border-radius: 500px;
-  margin-left: auto;
-}}
+
+}
 
 
 .profil{
@@ -79,34 +147,163 @@ a {
   width: 250px;
   height: 250px;
   border-radius: 1000px;
+  
 }
 main{
-  height: 300vh;
-  background: linear-gradient(180deg ,#ECE8EF 10%, #727072 50%, #0A2342 90%);
+  height:295.5vh;
+  
 
 }
 .about{
   width: 100%;
   height: 100vh;
-
-}
-.projet{
-  width: 100%;
-  height: 100vh;
-  color: #E7F0FF;
-  header
-  {
-    background: linear-gradient(180deg ,#727072 50%, transparent);
+  div{
+    h1{
+      font-size:1.5rem;
+    }
+    h3{
+      font-size:1.2rem;
+    }
   }
-}
 
+}
 .skills{
   width: 100%;
   height: 100vh;
   color: #fff;
   
+h2{
+  padding-bottom: 5%;
+  font-size:1.5rem;
+  
+}
+}
+
+.skill{
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+  h3{
+    font-size: 1.2rem;
+  }
+}
+
+
+.projet{
+  width: 100%;
+  height: 90vh;
+  color: #E7F0FF;
+  text-align: center;
+  h2{
+    font-size:2.5rem;
+    padding-bottom:2%;
+  }
+}
+.project{
+  display: flex;
+  justify-content: space-evenly ;
+  
+  div{
+    border: 2px solid ;
+    width: 30%;
+    height: 60vh;
+  }
+}
+
+footer{
+  height: 10vh;
+  width: 100%;
+
+
 }
 .protection{
   padding-top: 12vh;
   text-align: center;
+}
+
+.whitec {
+  color: #fff;
+  .link{
+    a{
+  color: #fff;}}
+}
+@media only screen and (max-width:  1280px){
+  
+}
+
+@media only screen and (max-width:  800px){
+  header {
+    height: 10vh;
+    div{
+      gap: 10px;
+      width: auto;
+      h2{
+      font-size:1.2rem ;
+    }
+    img {
+      border-radius: 500px;
+      width: 25px;
+      height: 25px;
+    }
+
+  }
+  .Menu{
+    display: flex;
+    font-size:30px;
+    
+  }}
+  .git{
+    display: none;
+  }
+  nav{
+    gap: 0px;
+    width:60%;
+  
+  .link{
+    width: 100px;
+    a{
+      margin: auto;
+      font-size: 1rem;
+    }
+  } 
+  }
+  
+}
+@media only screen and (max-width:  600px){
+  header {
+    height: 3vh;
+    div{
+      gap: 10px;
+      width: auto;
+      h2{
+      font-size:1rem ;
+    }
+    img {
+      border-radius: 500px;
+      width: 25px;
+      height: 25px;
+    }
+
+  }
+  .Menu{
+    display: flex;
+    font-size:20px;
+  }}
+nav{
+  gap: 0px;
+  width:60%;
+
+.link{
+  width: 100px;
+  a{
+    margin: auto;
+    font-size: 0.8rem;
+  }
+} 
+}
+.git{
+  display: none;
+}
+
+  
 }
