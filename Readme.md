@@ -1,34 +1,34 @@
-# Hello Welcome to my portfolio 
+## Welcome to my portfolio 
 
-## How install my Portfolio ?
+## How to install my portfolio?
 
-For install my portfolio you need to go on button Code and download zip for have a zip of my project
+To install my portfolio you need to go to the Code button and download the zip to get a zip of my project.
 
 
 ## How to open my portfolio
 
 ### In a text editor 
 
-you open your text editor and drag and drop the project or go in files and choose the button open folder and choose the project folder
+you open your text editor and you drag and drop the project or you go to files and you press the button open a folder and you choose the project folder.
 
-and if you want to see the result you have two options : 
+if you want to see the visual of the project you have two options: 
 
-go in your folder and open the file html and you can see the web site with
+go to your folder and open the html file and you can see the website with it.
 
 or open with your editor
 
 ### On your web browser
 
-On my git page you have a link for have acces of my portfolio deployed
+On my git page you have a link to my portfolio.
 
-## How i deployed my portfolio
+### How I deployed my portfolio
 
-For deployed my portfolio i use vercel on
-Vercel is a app that optimise my code and deployed after that i have a second application , this second application named imgbot , this application optimise my image and give to my web site less time to loading all image and text
+I deployed my portfolio with Vercel.
+Vercel is an application that optimizes my code and then deploys it. There is a second application, this second application is called imgbot, this application optimizes my images and allows my website less time to load all the images and text.
 
-## How i put my portfolio in github
+## How I put my portfolio in github
 
-For put my portfolio on my git hub, i open my terminal and with him i put all command for put my code on git hub 
+To put my portfolio on my git hub, I have my terminal and with it I write all the commands to put my code on the git hub
 
 command use :
 
@@ -38,4 +38,6 @@ Git commit
 
 Git push 
 
-With all this command i finish to put my project on my git hub
+With all these commands, I finished to put my project on my git hub.
+
+Translated with www.DeepL.com/Translator (free version)
