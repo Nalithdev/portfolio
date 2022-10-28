@@ -35,6 +35,16 @@ function closeNav() {
   document.querySelector("#mySidenav").classList.remove("side-active");
   document.querySelector(".menu-overlay").classList.remove("menu-overlay-active");
 }
+var text = document.getElementById("discord"); 
+function discord(){
+  if (text.innerHTML === "Nalith" ){
+  text.innerHTML = "Nalïth#3367" ;}
+  else {
+    text.innerHTML = "Nalith";
+  }
+
+
+}
 
 /*
 let observer = new IntersectionObserver(function (observable) {
