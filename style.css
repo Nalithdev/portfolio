@@ -205,7 +205,7 @@ main {
   height: 70vh;
 }
 .skill h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 2%;
 }
 .skill div:nth-of-type(1) {
@@ -511,6 +511,18 @@ footer div:nth-of-type(4) a img:nth-of-type(1) {
     font-size: 1.1rem;
     padding-bottom: 0;
   }
+  .about div:nth-of-type(1) p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about div:nth-of-type(2) p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about div:nth-of-type(3) p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .projet {
     height: 100%;
   }
@@ -528,6 +540,9 @@ footer div:nth-of-type(4) a img:nth-of-type(1) {
   .skill {
     display: block;
     text-align: center;
+  }
+  .skill h3 {
+    font-size: 1.2rem;
   }
   .skill div:nth-of-type(1) li {
     font-size: 0.8em;
