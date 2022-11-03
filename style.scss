@@ -174,10 +174,17 @@ main{
       div:nth-of-type(1){
         padding-top: 0;
         display: block;
+        width:25%;
       }
       div:nth-of-type(2){
         padding-top: 0;
         display: block;
+        width:25%;
+      }
+      div:nth-of-type(3){
+        padding-top: 0;
+        display: block;
+        width:25%;
       }
     }
   }
@@ -190,7 +197,7 @@ main{
   
 h2{
   padding-bottom: 5%;
-  font-size:1.5rem;
+  font-size:2.5rem;
   
 }
 }
@@ -200,12 +207,15 @@ h2{
   justify-content: space-evenly;
   height: 70vh;
   h3{
-    font-size: 1.2rem;
+    font-size: 2rem;
+    padding-bottom: 2%;
   }
   div:nth-of-type(1){
     padding-top: 0;
     li{
       list-style-type: none;
+      padding-bottom: 3%;
+      font-size:1.2rem;
     }
   }
   div:nth-of-type(2){
@@ -214,7 +224,7 @@ h2{
     ul  {
       display: grid;
       grid-template-columns: repeat(3 , 30%);
-      grid-template-rows: repeat(4 , 21vh);
+      grid-template-rows: repeat(4 , 20vh);
       gap: 10px;
       li:nth-of-type(1){
         grid-column: 1 / 2;
@@ -266,8 +276,8 @@ h2{
       li:nth-of-type(7){
         grid-column: 3 / 4;
         grid-row: 3/4;
-        background-image: url(img/Wordpress.webp);
-        background-size: 120%;
+        background-image: url(img/Python.webp);
+        background-size: 100%;
         background-repeat: no-repeat;
       }
     }
@@ -288,6 +298,9 @@ h2{
     font-size:2.5rem;
     padding-bottom:2%;
   }
+  h3{
+    font-size:1.5rem;
+  }
 }
 .project{
   display: flex;
@@ -305,14 +318,19 @@ footer{
   height:15vh;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   gap: 10px;
   div:nth-of-type(1){
     display: flex;
     align-items: center;
+    width:60px;
+    
     p{
-      display: none;
-    }
+      opacity: 0;
+      transition: 3s;
+    
+  }
   }
   img:nth-of-type(1){
     width: 60px;
@@ -328,7 +346,18 @@ footer{
     border-radius: 500px;
 
   }
+  
 }
+div:nth-of-type(3){
+  a{
+  img:nth-of-type(1){
+
+    width: 40px;
+    background-color: #fff;
+    border-radius: 500px;
+    height: 40px;
+
+  }}}
 
 
 }
@@ -341,7 +370,16 @@ footer{
   color: #fff;
   .link{
     a{
-  color: #fff;}}
+  color: #fff;}
+}
+}
+
+.discord-active{
+  transition:2s;
+  transform: rotate(360deg);
+  .pseudo{
+    opacity: 1;
+}
 }
 @media only screen and (max-width:  1280px){
   

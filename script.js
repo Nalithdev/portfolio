@@ -6,8 +6,8 @@ var menu = document.getElementsByClassName('Menu')[0];
 
 // trigger this function every time the user scrolls
 window.onscroll = function (event) {
-    var scroll = window.pageYOffset;
-    if (scroll > 750) {
+    var scroll = window.scrollY;
+    if (scroll > 655) {
 
         footer.classList.add('whitec');
         body.classList.add('whitec')
@@ -37,11 +37,7 @@ function closeNav() {
 }
 var text = document.getElementById("discord"); 
 function discord(){
-  if (text.innerHTML === "Nalith" ){
-  text.innerHTML = "Nalïth#3367" ;}
-  else {
-    text.innerHTML = "Nalith";
-  }
+  text.classList.toggle("discord-active");
 
 
 }
