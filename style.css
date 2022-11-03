@@ -144,12 +144,17 @@ main {
 }
 .about div h1 {
   font-size: 1.5rem;
+  padding-top: 2%;
 }
-.about div h3 {
+.about div h3:nth-of-type(1) h3:nth-of-type(1) {
   font-size: 1.2rem;
+  padding-bottom: 0;
 }
 .about div div:nth-of-type(1) {
   padding-top: 2%;
+}
+.about div div:nth-of-type(1) h3 {
+  font-size: 1.5em;
 }
 .about div .like {
   display: flex;
@@ -161,15 +166,27 @@ main {
   display: block;
   width: 25%;
 }
+.about div .like div:nth-of-type(1) h3 {
+  font-size: 1.2em;
+  padding-bottom: 2%;
+}
 .about div .like div:nth-of-type(2) {
   padding-top: 0;
   display: block;
   width: 25%;
 }
+.about div .like div:nth-of-type(2) h3 {
+  font-size: 1.2em;
+  padding-bottom: 2%;
+}
 .about div .like div:nth-of-type(3) {
   padding-top: 0;
   display: block;
   width: 25%;
+}
+.about div .like div:nth-of-type(3) h3 {
+  font-size: 1.2em;
+  padding-bottom: 2%;
 }
 
 .skills {
@@ -304,15 +321,16 @@ footer div:nth-of-type(1) {
 footer div:nth-of-type(1) p {
   opacity: 0;
   transition: 3s;
+  font-size: 1rem;
 }
-footer img:nth-of-type(1) {
-  width: 60px;
-  height: 35px;
+footer div:nth-of-type(1) img:nth-of-type(1) {
+  width: 50px;
+  height: 25px;
 }
-footer a {
+footer div:nth-of-type(2) a {
   padding-left: 10px;
 }
-footer a img:nth-of-type(1) {
+footer div:nth-of-type(2) a img:nth-of-type(1) {
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -323,6 +341,11 @@ footer div:nth-of-type(3) a img:nth-of-type(1) {
   background-color: #fff;
   border-radius: 500px;
   height: 40px;
+}
+footer div:nth-of-type(4) a img:nth-of-type(1) {
+  width: 70px;
+  height: 40px;
+  border-radius: 500px;
 }
 
 .protection {
@@ -394,6 +417,52 @@ footer div:nth-of-type(3) a img:nth-of-type(1) {
   .protection {
     padding-top: 8vh;
   }
+  .about h3 {
+    padding-bottom: 0;
+  }
+  .about div h3 {
+    padding-bottom: 5%;
+  }
+  .about div .like {
+    display: block;
+  }
+  .about div .like div:nth-of-type(1) {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .about div .like div:nth-of-type(2) {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .about div .like div:nth-of-type(3) {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  footer div:nth-of-type(1) p {
+    font-size: 0.7rem;
+  }
+  footer div:nth-of-type(1) img:nth-of-type(1) {
+    width: 45px;
+    height: 25px;
+  }
+  footer div:nth-of-type(2) a img:nth-of-type(1) {
+    width: 30px;
+    height: 30px;
+  }
+  footer div:nth-of-type(3) a img:nth-of-type(1) {
+    width: 35px;
+    height: 35px;
+  }
+  footer div:nth-of-type(4) a img:nth-of-type(1) {
+    width: 55px;
+    height: 30px;
+  }
 }
 @media only screen and (max-width: 600px) {
   header {
@@ -429,11 +498,18 @@ footer div:nth-of-type(3) a img:nth-of-type(1) {
   .git {
     display: none;
   }
+  .about h3 {
+    padding-bottom: 0;
+  }
+  .about h3:nth-of-type(2) {
+    padding-bottom: 5%;
+  }
   .about div h1 {
     font-size: 1.3rem;
   }
   .about div h3 {
     font-size: 1.1rem;
+    padding-bottom: 0;
   }
   .projet {
     height: 100%;
@@ -453,6 +529,9 @@ footer div:nth-of-type(3) a img:nth-of-type(1) {
     display: block;
     text-align: center;
   }
+  .skill div:nth-of-type(1) li {
+    font-size: 0.8em;
+  }
   .skill div:nth-of-type(2) {
     margin: auto;
     padding-top: 5%;
@@ -460,5 +539,8 @@ footer div:nth-of-type(3) a img:nth-of-type(1) {
   }
   .skill div:nth-of-type(2) ul {
     grid-template-rows: repeat(4, 10vh);
+  }
+  footer {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
