@@ -303,6 +303,39 @@ main {
   width: 30%;
   height: 60vh;
 }
+.project div:nth-of-type(1) div {
+  background-image: url(img/eden_zero.webp);
+  width: 100%;
+  height: 55%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.project div:nth-of-type(1) p {
+  font-size: 1.2rem;
+}
+.project div:nth-of-type(2) div {
+  background-image: url(img/bmw.webp);
+  width: 100%;
+  height: 55%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.project div:nth-of-type(2) p {
+  font-size: 1.2rem;
+}
+.project div:nth-of-type(3) div {
+  background-image: url(img/anome.webp);
+  width: 100%;
+  height: 55%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.project p {
+  font-size: 1.2rem;
+}
 
 footer {
   width: 100%;
