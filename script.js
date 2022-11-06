@@ -41,33 +41,3 @@ function discord(){
 
 
 }
-
-/*
-let observer = new IntersectionObserver(function (observable) {
-
-  observable.forEach(function (observable){
-
-  if( observable.Interactionratio > 0.95 && item == document.querySelector('.about')){
-    header.classlist.add('aboutc');
-    header.classlist.remove('skillsc');
-    header.classlist.remove('projetc');
-  }
-  if( observable.Interactionratio > 0.95 && item == document.querySelector('.skills')){
-    header.classlist.add('skillsc');
-    header.classlist.add('projetc');
-  }
-  if( observable.Interactionratio > 0.95 && item == document.querySelector('.projet')){
-    header.classlist.add('projetc');
-  }
-
-})
-threshold = [0.9];
-
-})
-let item = document.querySelector(".about, .skills, .projet")
-let about = document.querySelector(".about")
-let skills = document.querySelector(".skills")
-let proket = document.querySelector(".projet")
-let header = document.getElementsByTagName('header')
-*/
-
