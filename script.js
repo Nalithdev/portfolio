@@ -41,6 +41,24 @@ function discord(){
 
 
 }
+function animationblack(id){
+    console.log(id)
+  if (id == p1){
+    document.querySelector('.bgi1').classList.add('card_active');
+    document.querySelector('.bgi2').classList.remove('card_active');
+    document.querySelector('.bgi3').classList.remove('card_active');
+  }
+  if (id == p2){
+    document.querySelector('.bgi2').classList.add('card_active')
+    document.querySelector('.bgi1').classList.remove('card_active')
+    document.querySelector('.bgi3').classList.remove('card_active')
+  }
+  if (id == p3){
+    document.querySelector('.bgi3').classList.add('card_active')
+    document.querySelector('.bgi2').classList.remove('card_active')
+    document.querySelector('.bgi1').classList.remove('card_active')
+  }
+}
 
 /*
 let observer = new IntersectionObserver(function (observable) {
