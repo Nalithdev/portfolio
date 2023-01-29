@@ -7,6 +7,15 @@
   font-size:15px;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100px;
+}
+
 body{
   background: linear-gradient(180deg ,#ECE8EF 10%, #727072 50%, #0A2342 90%);
 }
